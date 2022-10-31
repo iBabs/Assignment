@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <form action="success.html">
+      <h1>
+        Registration Page
+      </h1>
+      <hr>
+      <div>
+        <label for="fname">First Name:</label><br />
+        <input type="text" name="fname" id="fname" minlength="2" maxlength="15" required>
+      </div>
+      <div>
+        <label for="lastname">Last Name:</label> <br />
+        <input type="text" name="lastname" id="lastname" minlength="2" maxlength="15" required>
+      </div>
+      <div>
+        <label for="phone">Phone:</label><br />
+        <input type="tel" name="phone" id="phone" pattern="[0-9]+" placeholder="2347012345678" required>
+      </div>
+      <div>
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+      </div>
+      <div>
+        <label for="gender">Gender</label> <br />
+        <select name="gender" id="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="date">Date of Birth:</label><br />
+        <input type="date" name="date" id="date" max="01-01-2000" required>
+      </div>
+      <div>
+        <label for="color">Favourite Colour:</label>
+        <input type="color" name="color" id="color" required>
+      </div>
+      <button type="submit"> Register</button>
+      <p>
+        If you already have an account with us, click <a href="login.html">here</a> to to log-in
+      </p>
+    </form>
+
+  </main>
+
+</body>
+
+</html>

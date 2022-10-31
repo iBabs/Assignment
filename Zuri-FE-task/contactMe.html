@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Contact Page</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">iBabs</h1>
+    <nav>
+      <ul>
+        <li> <a href="index.html">Home Page</a></li>
+        <li><a href="Login.html"> Log In</a></li>
+    </nav>
+  </header>
+  <main>
+    <form>
+      <div>
+        <div>
+          <label for="full name">Full Name </label> <br>
+          <input type="name" placeholder="Enter your fullname" id="fullname" required>
+        </div>
+        <div>
+          <div>
+            <label for="email">Email </label> <br>
+            <input type="email" placeholder="example@zuri.com" id="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          </div>
+          <textarea name="message" id="msg" cols="30" rows="10"> Hi iBabs, we'd like to hire you for</textarea>
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
